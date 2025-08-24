@@ -35,6 +35,12 @@ type HomeController (logger : ILogger<HomeController>) =
     member this.vision () =
          this.View()
 
+    member this.comandero () =
+           this.View()
+
+    member this.celaneo () =
+            this.View()
+
 
     [<ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)>]
     member this.Error () =
